@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "98b11cf9-72dd-42df-81fe-74929577ed47",
+		"name": "NodeJsCRUDApis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1372064"
+	},
+	"item": [
+		{
+			"name": "Listing Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/users/63172b12a3d72d6e345c99c4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"63172b12a3d72d6e345c99c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"display_name\": \"imranmunawar\",\r\n        \"phone_number\": \"12343321231\",\r\n        \"first_name\": \"imran\",\r\n        \"last_name\": \"munawar\",\r\n        \"email_address\": \"imran@abc.com\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"_id\": \"631727b8d53da51898d676a0\",\r\n        \"display_name\": \"imranmunawar123\",\r\n        \"phone_number\": \"12343321231\",\r\n        \"first_name\": \"imran1\",\r\n        \"last_name\": \"munawar23\",\r\n        \"email_address\": \"imran@abc.com\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/users/631727b8d53da51898d676a0",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"631727b8d53da51898d676a0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "nodecodesnippet",
+  "version": "1.0.0",
+  "description": "Nodejs Code Snippet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Admin",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "async": "^2.6.2",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^6.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^6.14.2",
+    "helmet": "^3.13.0",
+    "jsonwebtoken": "^8.3.0",
+    "mkdirp": "^0.5.1",
+    "mongoose": "^5.9.*",
+    "node-cache": "^5.1.2"
+  }
+}

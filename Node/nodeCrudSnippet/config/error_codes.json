@@ -1,0 +1,22 @@
+{
+  "missing_fields": {
+    "status": 4000,
+    "message": "Some required field is missing in your input"
+  },
+  "id_mismatch": {
+    "status": 4001,
+    "message": "Some of the given id does not match in the Db"
+  },
+  "no_data": {
+    "status": 4002,
+    "message": "No data found"
+  },
+  "invalid_data": {
+    "status": 4003,
+    "message": "Invalid Data"
+  },
+  "server_issue": {
+    "status": 4999,
+    "message": "Server Issue"
+  }
+}

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif !important;
+
+}
+
+:root {
+  --maxWidth: 1280px;
+  --white: #fff;
+  --bodyColor: #f4f4f4;
+  --green: #333;
+  --yellow: #ffcb05;
+  --grey: #525252;
+  --lightGrey: rgb(107, 114, 128);
+  --fontSuperBig: 2.5rem;
+  --fontBig: 1.7rem;
+  --fontSmall: 1.2rem;
+  --fontNormal: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.mainContent {
+  padding: 0 20px;
+}
+
+.btnGreen {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 16.5px 14px;
+  white-space: nowrap;
+  font-size: var(--fontNormal);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.MuiButton-startIcon {
+  margin-right: 0;
+}
+
+.btnGreen:hover {
+  background-color: var(--green) !important;
+  opacity: 0.8;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.heading {
+  font-size: var(--fontBig);
+  color: var(--green);
+  padding: 20px 0px;
+}
+
+.wrapper {
+  background-color: #fff;
+  min-height: calc(100vh - 125px);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+  margin: 30px 0px;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.rightButton .btn {
+  margin-left: 10px;
+}
+
+.MuiButtonBase-root-MuiButton-root:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.addBtn {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.addBtn:hover {
+  background-color: var(--green);
+}
+
+
+.deleteBtn {
+  background-color: #dc3545;
+  color: var(--white);
+}
+
+.deleteBtn:hover {
+  background-color: #dc3545;
+}
+
+.editBtnSm {
+  color: green;
+  min-width: auto;
+  margin-right: 5px;
+}
+
+.deleteBtnSm {
+  color: #dc3545;
+  min-width: auto;
+}
+
+.backBtn {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.backBtn:hover {
+  background-color: var(--green);
+}
+
+.formGrid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainContent {
+    padding: 0 10px;
+  }
+
+  .wrapper {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: var(--fontBig);
+  }
+
+  .formGrid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
